@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wednesday</title>
+  <meta name="description" content="Minimalistická, čistá a lehce futuristická prezentace restaurovaného nábytku a vybraných nových kusů." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="Domů">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Wednesday</span>
+      </a>
+      <nav class="nav-links" aria-label="Primární navigace">
+        <a href="#new" aria-current="page">Novinky</a>
+        <a href="#restored">Restaurované</a>
+        <a href="#about">O nás</a>
+        <a href="#contact">Kontakt</a>
+        <a class="btn btn-accent" href="#visit">Navštivte nás</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Otevřít menu" aria-controls="mobile-menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menu">
+      <a href="#new">Novinky</a>
+      <a href="#restored">Restaurované</a>
+      <a href="#about">O nás</a>
+      <a href="#contact">Kontakt</a>
+      <div class="actions">
+        <a class="btn btn-accent" href="#visit">Navštivte nás</a>
+        <a class="btn btn-ghost" href="#contact">Kontakt</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <div class="eyebrow">Kurátorovaný nábytek</div>
+        <h1>Restaurované klasiky. <br/>Čistý, moderní design.</h1>
+        <p class="lead">Minimalistická galerie a bazar: pečlivě obnovené kousky z poloviny 20. století i vybrané současné kusy. Neutrální paleta, nadčasové linie, dlouhá životnost.</p>
+        <div class="cta">
+          <a href="#new" class="btn btn-accent">Nové přírůstky</a>
+          <a href="#restored" class="btn btn-ghost">Objevte restaurované</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <img class="hero-img" src="https://placehold.co/1200x900?text=Hlavn%C3%AD+foto" alt="Hlavní produktová fotografie v čistém prostředí">
+        <div class="caption">Zástupný obrázek — nahraďte nejlepším kouskem v jasném, nezahlceném prostředí.</div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Kategorie -->
+  <section class="section container" id="new">
+    <div class="section-header">
+      <div>
+        <h2>Nakupujte podle kategorie</h2>
+        <p class="sub">Dvě jednoduché cesty: nové designy nebo citlivě obnovené originály.</p>
+      </div>
+    </div>
+    <div class="tiles">
+      <div class="tile">
+        <div>
+          <h3>Moderní kusy</h3>
+          <p>Nový nábytek s minimalistickými liniemi a odolnými povrchy.</p>
+          <a class="btn btn-accent" href="#products">Zobrazit výběr</a>
+        </div>
+        <img class="art" src="https://placehold.co/1000x600?text=Modern%C3%AD+kategorie" alt="Ilustrační obrázek moderního nábytku">
+      </div>
+      <div class="tile" id="restored">
+        <div>
+          <h3>Restaurované originály</h3>
+          <p>Vintage kousky s druhým životem díky pečlivé obnově.</p>
+          <a class="btn btn-accent" href="#products">Prohlédnout restaurované</a>
+        </div>
+        <img class="art" src="https://placehold.co/1000x600?text=Restaurovan%C3%A9+kategorie" alt="Ilustrační obrázek restaurovaného nábytku">
+      </div>
+    </div>
+  </section>
+
+  <!-- Produkty (placeholdery) -->
+  <section class="section container" id="products">
+    <div class="section-header">
+      <div>
+        <h2>Vybrané kousky</h2>
+        <p class="sub">Nahraďte tyto zástupné položky reálnými (foto, název, cena).</p>
+      </div>
+      <a class="btn" href="#">Zobrazit vše</a>
+    </div>
+
+    <div class="grid">
+      <!-- Šablona karty produktu -->
+      <article class="card col-3" aria-label="Produkt: Dubové lounge křeslo">
+        <img class="media" src="https://placehold.co/800x600?text=Dubov%C3%A9+k%C5%99eslo" alt="Dubové lounge křeslo">
+        <div class="body">
+          <div class="title-sm">Dubové lounge křeslo (Restaurované)</div>
+          <div class="meta">
+            <span>Dub, len</span>
+            <span class="price">€480</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card col-3" aria-label="Produkt: Minimalistický odkládací stolek">
+        <img class="media" src="https://placehold.co/800x600?text=Odkl%C3%A1dac%C3%AD+stolek" alt="Minimalistický odkládací stolek">
+        <div class="body">
+          <div class="title-sm">Minimalistický odkládací stolek</div>
+          <div class="meta">
+            <span>Povrch práškový lak</span>
+            <span class="price">€190</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card col-3" aria-label="Produkt: Ořechová komoda">
+        <img class="media" src="https://placehold.co/800x600?text=O%C5%99echov%C3%A1+komoda" alt="Ořechová komoda">
+        <div class="body">
+          <div class="title-sm">Ořechová komoda (Restaurovaná)</div>
+          <div class="meta">
+            <span>60. léta • mat</span>
+            <span class="price">€1 290</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card col-3" aria-label="Produkt: Skleněný konferenční stůl">
+        <img class="media" src="https://placehold.co/800x600?text=Sklen%C4%9Bn%C3%BD+st%C5%AFl" alt="Skleněný konferenční stůl">
+        <div class="body">
+          <div class="title-sm">Skleněný konferenční stůl</div>
+          <div class="meta">
+            <span>Tvrzené sklo</span>
+            <span class="price">€320</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card col-3" aria-label="Produkt: Bukové jídelní židle (set 4)">
+        <img class="media" src="https://placehold.co/800x600?text=Bukov%C3%A9+%C5%BEidle" alt="Bukové jídelní židle">
+        <div class="body">
+          <div class="title-sm">Bukové jídelní židle (sada 4)</div>
+          <div class="meta">
+            <span>Nové čalounění</span>
+            <span class="price">€640</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card col-3" aria-label="Produkt: Hliníková stojací lampa">
+        <img class="media" src="https://placehold.co/800x600?text=Stojac%C3%AD+lampa" alt="Hliníková stojací lampa">
+        <div class="body">
+          <div class="title-sm">Hliníková stojací lampa</div>
+          <div class="meta">
+            <span>Stmívatelné LED</span>
+            <span class="price">€210</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card col-3" aria-label="Produkt: Psací stůl z jasanu">
+        <img class="media" src="https://placehold.co/800x600?text=Jasanov%C3%BD+st%C5%AFl" alt="Psací stůl z jasanu">
+        <div class="body">
+          <div class="title-sm">Psací stůl z jasanu (Restaurovaný)</div>
+          <div class="meta">
+            <span>Ruční olejování</span>
+            <span class="price">€850</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card col-3" aria-label="Produkt: Modulární police">
+        <img class="media" src="https://placehold.co/800x600?text=Modul%C3%A1rn%C3%AD+police" alt="Modulární police">
+        <div class="body">
+          <div class="title-sm">Modulární police</div>
+          <div class="meta">
+            <span>Konfigurovatelné</span>
+            <span class="price">€380</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Info pás -->
+  <section class="container info-strip">
+    <div class="info-item">
+      <strong>Osobní odběr v Praze</strong><span class="muted">— snadné lokální vyzvednutí</span>
+    </div>
+    <div class="info-item">
+      <strong>Péče & restaurování</strong><span class="muted">— karta péče u každého vintage kusu</span>
+    </div>
+    <div class="info-item">
+      <strong>Bezpečné platby</strong><span class="muted">— pohodlně kartou</span>
+    </div>
+  </section>
+
+  <!-- O nás / Kontakt -->
+  <section class="section container" id="about">
+    <div class="section-header">
+      <div>
+        <h2>O galerii</h2>
+        <p class="sub">Malé studio zaměřené na nadčasové tvary, jemné textury a poctivé materiály.</p>
+      </div>
+    </div>
+    <div class="tiles">
+      <div class="tile">
+        <div>
+          <h3>Jak obnovujeme</h3>
+          <p>Zachováváme původní charakter a zlepšujeme komfort a životnost — nové textilie, oživené povrchy, pečlivé spoje.</p>
+        </div>
+        <img class="art" src="https://placehold.co/1000x600?text=Postup+restaurov%C3%A1n%C3%AD" alt="Ilustrace procesu restaurování">
+      </div>
+      <div class="tile" id="visit">
+        <div>
+          <h3>Navštivte prostor</h3>
+          <p>Otevřeno St–So, 11:00–18:00. Přijďte si kousky prohlédnout na denním světle a osahat materiály.</p>
+          <a class="btn btn-accent" href="#contact">Plánovat návštěvu</a>
+        </div>
+        <img class="art" src="https://placehold.co/1000x600?text=Prostor+galerie" alt="Ilustrační foto prostoru galerie">
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container footer-wrap">
+      <div>
+        <h3>Galerie & Bazár</h3>
+        <p class="muted">Minimalistický nábytek — restaurovaný i nový. Praha.</p>
+      </div>
+      <div>
+        <strong>Kontakt</strong>
+        <p class="muted">+420 000 000 000<br>hello@example.com</p>
+      </div>
+      <div>
+        <strong>Adresa</strong>
+        <p class="muted">Ulice 123, Praha 6<br>110 00, Česká republika</p>
+      </div>
+    </div>
+    <div class="container legal">© <span id="y"></span> Galerie & Bazár. Všechna práva vyhrazena.</div>
+  </footer>
+
+  <script>
+    // Mobilní menu – přepínač
+    const toggle = document.querySelector('.menu-toggle');
+    const drawer = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => {
+      const open = drawer.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+
+    // Aktuální rok do patičky
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
